@@ -1,43 +1,43 @@
 //Interface
 package main
 
-import (
-	"fmt"
-	"math"
-)
+// import (
+// 	"fmt"
+// 	"math"
+// )
 
-type geometry interface {
-	area() float64
-	perimeter() float64
-}
+// type geometry interface {
+// 	area() float64
+// 	perimeter() float64
+// }
 
-type square struct {
-	width, height float64
-}
-type circle struct {
-	radius float64
-}
+// type square struct {
+// 	width, height float64
+// }
+// type circle struct {
+// 	radius float64
+// }
 
-func (s square) area() float64 {
-	return s.width * s.height
-}
-func (s square) perimeter() float64 {
-	return 2*s.width + 2*s.height
-}
-func (c circle) area() float64 {
-	return math.Pi * c.radius * c.radius
-}
-func (c circle) perimeter() float64 {
-	return 2 * math.Pi * c.radius
-}
-func measure(g geometry) {
-	fmt.Println(g)
-	fmt.Println(g.area())
-	fmt.Println(g.perimeter())
-}
-func main() {
-	s := square{width: 3, height: 4}
-	c := circle{radius: 5}
-	measure(s)
-	measure(c)
-}
+// func (s square) area() float64 {
+// 	return s.width * s.height
+// }
+// func (s square) perimeter() float64 {
+// 	return 2*s.width + 2*s.height
+// }
+// func (c circle) area() float64 {
+// 	return math.Pi * c.radius * c.radius
+// }
+// func (c circle) perimeter() float64 {
+// 	return 2 * math.Pi * c.radius
+// }
+// func measure(g geometry) {
+// 	fmt.Println(g)
+// 	fmt.Println(g.area())
+// 	fmt.Println(g.perimeter())
+// }
+// func main() {
+// 	s := square{width: 3, height: 4}
+// 	c := circle{radius: 5}
+// 	measure(s)
+// 	measure(c)
+// }

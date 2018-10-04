@@ -1,21 +1,19 @@
-//錯誤訊息範例
 package main
 
-import "fmt"
+// //錯誤訊息範例
+// func main() {
+// 	defer func() {
+// 		fmt.Println("first")
+// 		if err := recover(); err != nil {
+// 			fmt.Println(err)
+// 		}
+// 		fmt.Println("end")
+// 	}()
+// 	f()
+// }
 
-func main() {
-	defer func() {
-		fmt.Println("first")
-		if err := recover(); err != nil {
-			fmt.Println(err)
-		}
-		fmt.Println("end")
-	}()
-	f()
-}
-
-func f() {
-	fmt.Println("test")
-	panic(1)
-	fmt.Println("test2")
-}
+// func f() {
+// 	fmt.Println("test")
+// 	panic(1)
+// 	fmt.Println("test2")
+// }
